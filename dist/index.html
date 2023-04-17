@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="">
+    <!-- CSS only for FontAwesome -->
+    <!-- <link rel="stylesheet" href="../../node_modules/jquery/dist/jquery.min.js" /> -->
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS only for Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <title>Lab_2</title>
+</head>
+<body>
+<header class="bg-danger">
+    <div class="container">
+        <div class="nav nav-extend-md align-items-center">
+            <a href="#" target="_blank"><img src="../images/logo.png" alt="" class="logo" width="100"></a>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>Функционал недоступен</p>
+                </div>
+              </div>
+              
+            <button id="myBtn">Фигуры</button>
+        </div>
+    </div>
+</header>
+<section>
+    <div class="container mb-5">
+        <h1>Геометрические фигуры</h1>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+            <div class="col mb-5">
+                <div class="card" data-bs-toggle="modal" data-bs-num="0"
+                     data-bs-target="#exampleModal">
+                    <img class="card-img-top img-fluid" src="https://st3.stpulscen.ru/images/product/413/272/757_original.jpg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Квадрат</h5>
+                        <p class="card-text">Квадрат — это прямоугольник, у которого все стороны равны.
+                            Можно дать и другое определение квадрата:
+                            квадрат — это ромб, у которого все углы прямые.
+                            Получается, что квадрат обладает всеми свойствами параллелограмма, прямоугольника и ромба.
+                            Квадрат относится к правильным многоугольникам. У правильного многоугольника все стороны равны и все углы равны.
+                            Перечислим свойства квадрата:
+                            Все углы квадрата — прямые, все стороны квадрата — равны.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" data-bs-toggle="modal" data-bs-num="1"
+                     data-bs-target="#exampleModal">
+                    <img class="card-img-top img-fluid" src="https://catherineasquithgallery.com/uploads/posts/2021-02/1614529247_189-p-krasnii-krug-na-belom-fone-218.png" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Круг</h5>
+                        <p class="card-text">Часть плоскости, которая лежит внутри окружности. Другими словами, это геометрическое место точек плоскости, расстояние от которых до заданной точки, называемой центром круга, не превышает заданного неотрицательного числа R. Число R называется радиусом этого круга. Если радиус равен нулю, то круг вырождается в точку. Круг, имеющий толщину, нередко называют диском. Однако в топологии слова круг и диск являются синонимами.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" data-bs-toggle="modal" data-bs-num="2"
+                     data-bs-target="#exampleModal">
+                    <img class="card-img-top" src="https://oir.mobi/uploads/posts/2019-12/1575954082_16-46.jpg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Овал</h5>
+                        <p class="card-text">Плоская замкнутая строго выпуклая гладкая кривая; следовательно имеющая с любой прямой не более двух общих точек. Простейшим примером овала является эллипс. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" data-bs-toggle="modal" data-bs-num="3"
+                     data-bs-target="#exampleModal">
+                    <img class="card-img-top img-fluid" src="https://kartinkin.net/uploads/posts/2022-03/1647937920_1-kartinkin-net-p-romb-kartinki-1.png" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Ромб</h5>
+                        <p class="card-text">Ромб — это параллелограмм, у которого все стороны равны (см. другие варианты определения. ). Термин «ромб» происходит от др.-греч. ῥόμβος — «бубен». Если сейчас бубны в основном делают круглой формы, то раньше их делали как раз в форме квадрата или ромба. Поэтому название карточной масти бубны, знаки которой имеют ромбическую форму, происходит ещё с тех времён, когда бубны не были круглыми.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" data-bs-toggle="modal" data-bs-num="4"
+                     data-bs-target="#exampleModal">
+                    <img class="card-img-top img-fluid" src="https://otvet.imgsmail.ru/download/u_58c567dfa24c2976de36d341046ad010_800.jpg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Пятиугольник</h5>
+                        <p class="card-text">Правильный пятиугольник (или пентагон от греч. πενταγωνον) — геометрическая фигура, правильный многоугольник с пятью сторонами. У правильного пятиугольника угол равен. Площадь правильного пятиугольника рассчитывается по любой из формул: , где. — радиус описанной окружности, — радиус вписанной окружности, — диагональ, — сторона.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="bg-danger">
+    <div class="container">
+        <div class="nav align-items-center">
+            <div><p>Саня делал крч</p></div>
+        </div>
+    </div>
+</footer>
+<div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+     aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="BullyLabel">Описание</h5>
+            </div>
+            <div class="modal-body"></div>
+        </div>
+    </div>
+</div>
+<script>
+    var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+    var toastList = toastElList.map(function (toastEl) {
+        return new bootstrap.Toast(toastEl, {delay: 1500})
+    });
+    var notEmplErr = toastList[0];
+
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+    })
+
+    var currentModal = 0;
+    var modalText = ["Квадрат — это прямоугольник, у которого все стороны равны.Можно дать и другое определение квадрата: квадрат — это ромб, у которого все углы прямые.Получается, что квадрат обладает всеми свойствами параллелограмма, прямоугольника и ромба. Квадрат относится к правильным многоугольникам. У правильного многоугольника все стороны равны и все углы равны. Перечислим свойства квадрата: Все углы квадрата — прямые, все стороны квадрата — равны." +
+    `  <a href='#' data-bs-toggle="popover" title="Popover title" data-bs-content="Здесь должен быть контент">Подсказка</a>`
+        ,
+        "Часть плоскости, которая лежит внутри окружности. Другими словами, это геометрическое место точек плоскости, расстояние от которых до заданной точки, называемой центром круга, не превышает заданного неотрицательного числа R. Число R называется радиусом этого круга. Если радиус равен нулю, то круг вырождается в точку. Круг, имеющий толщину, нередко называют диском. Однако в топологии слова круг и диск являются синонимами." +
+        ` <a href='#' data-bs-toggle="popover" title="Popover title" data-bs-content="Здесь должен быть контент">Подсказка</a>`
+        ,
+        "Плоская замкнутая строго выпуклая гладкая кривая; следовательно имеющая с любой прямой не более двух общих точек. Простейшим примером овала является эллипс." +
+        `<a href='#' data-bs-toggle="popover" title="Popover title" data-bs-content="Здесь должен быть контент">Подсказка</a>`
+        ,
+        "Ромб — это параллелограмм, у которого все стороны равны (см. другие варианты определения. ). Термин «ромб» происходит от др.-греч. ῥόμβος — «бубен». Если сейчас бубны в основном делают круглой формы, то раньше их делали как раз в форме квадрата или ромба. Поэтому название карточной масти бубны, знаки которой имеют ромбическую форму, происходит ещё с тех времён, когда бубны не были круглыми." +
+        `<a href='#' data-bs-toggle="popover" title="Popover title" data-bs-content="Здесь должен быть контент">Подсказка</a>`
+        ,
+        "Правильный пятиугольник (или пентагон от греч. πενταγωνον) — геометрическая фигура, правильный многоугольник с пятью сторонами. У правильного пятиугольника угол равен. Площадь правильного пятиугольника рассчитывается по любой из формул: , где. — радиус описанной окружности, — радиус вписанной окружности, — диагональ, — сторона." +
+        `<a href='#' data-bs-toggle="popover" title="Popover title" data-bs-content="Здесь должен быть контент">Подсказка</a>`
+    ]
+    var modalCount = modalText.length;
+    var exampleModal = document.getElementById('exampleModal')
+    function showInfo(i) {
+        if(i >= 0) i = i % modalCount;
+        else i = modalCount - 1;
+        var modalParagraph = exampleModal.querySelector('.modal-body');
+        let text = modalText[i];
+        modalParagraph.innerHTML = text
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
+        currentModal = i;
+    }
+    exampleModal.addEventListener('show.bs.modal', function (event) {
+        // Button that triggered the modal
+        let button = event.relatedTarget
+        // Extract info from data-bs-* attributes
+        let num = button.getAttribute('data-bs-num')
+        // If necessary, you could initiate an AJAX request here
+        // and then do the updating in a callback.
+        //
+        // Update the modal's content.
+        showInfo(num);
+    });
+    exampleModal.addEventListener("keydown", event => {
+        if (event.code === "ArrowLeft") {
+            showInfo(currentModal - 1);
+            //перекл влево;
+        } else if (event.code === "ArrowRight") {
+            showInfo(currentModal + 1);
+            //перекл вправо;
+        }
+    });
+    $(document).ready(function() {
+    // При клике на кнопку, открываем модальное окно
+    $("#myBtn").click(function() {
+      $("#myModal").css("display", "block");
+    });
+  
+    // При клике на крестик, закрываем модальное окно
+    $(".close").click(function() {
+      $("#myModal").css("display", "none");
+    });
+  
+    // При клике вне модального окна, закрываем его
+    $(window).click(function(event) {
+      if (event.target.id == "myModal") {
+        $("#myModal").css("display", "none");
+      }
+    });
+  });
+</script>
+<script src="main.js"></script>
+</body>
+</html>
